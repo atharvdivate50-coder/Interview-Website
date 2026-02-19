@@ -1,0 +1,10 @@
+# render.yaml - Instructions for Render.com deployment
+services:
+  - type: web
+    name: ai-interview-prep
+    env: python
+    # Command to install all necessary libraries from requirements.txt
+    buildCommand: pip install -r requirements.txt
+    # Command to launch the Streamlit app on the assigned cloud port
+    startCommand: streamlit run web_app.py --server.port $PORT --server.address 0.0.0.0
+    plan: free
