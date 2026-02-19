@@ -1,0 +1,14 @@
+# Main web framework for the UI
+streamlit
+
+# Library for professional success animations
+streamlit-lottie
+
+# Required to fetch animation data from the web
+requests
+
+# Library for voice-to-text processing (Cloud compatible)
+SpeechRecognition
+
+# Production web server for cloud hosting
+gunicorn
